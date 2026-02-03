@@ -1,0 +1,4 @@
+dataset,model,precision,recall,f1,tp,fp,fn,tn,false_alarm_rate,fit_time_ms,infer_time_ms,details
+base,zscore,1.0,0.2,0.33333333333333337,4,0,16,980,0.0,0.000100000761449337,9.933499968610704,"{'window': 50, 'threshold': 3.0}"
+base,isolation_forest,0.65,0.65,0.65,13,7,7,973,0.007142857142857143,192.31029995717108,14.722399995662272,"{'contamination': 0.02, 'n_estimators': 200}"
+base,oneclass_svm,0.10465116279069768,0.45,0.169811320754717,9,77,11,903,0.07857142857142857,2.334799966774881,2.3606999311596155,"{'nu': 0.02, 'gamma': 'scale'}"

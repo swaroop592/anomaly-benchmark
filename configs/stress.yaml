@@ -1,0 +1,21 @@
+dataset:
+  name: stress
+  n_points: 1000
+  anomaly_frac: 0.02
+  noise_std: 1.2
+  drift_per_step: 0.003
+  missing_frac: 0.03
+  subtle_anomaly_frac: 0.02
+  seed: 2
+
+models:
+  zscore:
+    window: 50
+    threshold: 3.0
+  isolation_forest:
+    contamination: 0.02
+    n_estimators: 200
+    random_state: 42
+  oneclass_svm:
+    nu: 0.02
+    gamma: scale

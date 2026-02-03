@@ -1,0 +1,21 @@
+dataset:
+  name: base
+  n_points: 1000
+  anomaly_frac: 0.02
+  noise_std: 0.3
+  drift_per_step: 0.0
+  missing_frac: 0.0
+  subtle_anomaly_frac: 0.0
+  seed: 1
+
+models:
+  zscore:
+    window: 50
+    threshold: 3.0
+  isolation_forest:
+    contamination: 0.02
+    n_estimators: 200
+    random_state: 42
+  oneclass_svm:
+    nu: 0.02
+    gamma: scale

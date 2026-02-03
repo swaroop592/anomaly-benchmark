@@ -6,3 +6,4 @@ results/*
 !results/.gitkeep
 reports/*.png
 !reports/summary.md
+!results/*.csv
