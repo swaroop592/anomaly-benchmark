@@ -5,3 +5,4 @@ data/raw/
 results/*
 !results/.gitkeep
 reports/*.png
+!reports/summary.md
